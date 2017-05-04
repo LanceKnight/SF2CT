@@ -1,2 +1,2 @@
 # SF2CT
-Android App for converting square to carton
+Android App for converting square feet to carton
