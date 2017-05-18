@@ -6,6 +6,7 @@ var SFPP_1224 = 1.93625;
 var SFPP_2424 = 3.8725;
 
 var per_box = 0;
+var per_4 = 4;
 var per_8 = 8;
 var per_11 = 11;
 
@@ -38,16 +39,20 @@ myApp.controller('myController', function ($scope) {
 			document.getElementById("b3").style.color = "red";
 		
         }
-
+        $scope.p4 = function(){
+            per_box = per_4;
+			$scope.clrBoxColor();
+			document.getElementById("p1").style.color = "red";
+        }
         $scope.p8 = function(){
             per_box = per_8;
 			$scope.clrBoxColor();
-			document.getElementById("p1").style.color = "red";
+			document.getElementById("p2").style.color = "red";
         }
         $scope.p11 = function(){
             per_box = per_11;
 			$scope.clrBoxColor();
-			document.getElementById("p2").style.color = "red";
+			document.getElementById("p3").style.color = "red";
         }
 		$scope.clrSizeColor = function(){
 			document.getElementById("b1").style.color = "white";
@@ -57,7 +62,7 @@ myApp.controller('myController', function ($scope) {
 		$scope.clrBoxColor = function(){
 			document.getElementById("p1").style.color = "white";
 			document.getElementById("p2").style.color = "white";
-			document.getElementById("b3").style.color = "white";
+			document.getElementById("p3").style.color = "white";
 		}
 
 });
