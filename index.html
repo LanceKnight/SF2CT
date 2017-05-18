@@ -1,0 +1,45 @@
+<html>
+
+<head>
+	<title>AngularJS Directives</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> 
+</head>
+
+<body>
+<h1>Wonder Converter</h1>
+
+<div ng-app = "myApp" ng-controller ="myController">
+    <P>Size:
+        <button id = "b1" type="button" class="btn btn-primary" ng-click = "s1212()">12*12</button>
+		<button id = "b2" type="button" class="btn btn-primary" ng-click = "s1224()">12*24</button>
+        <button id = "b3" type="button" class="btn btn-primary" ng-click = "s2424()">24*24</button>
+    </P>
+    <p>Piece per carton
+        <button id = "p1" type="button" class="btn btn-success" ng-click = "p8()">8</button>
+        <button id = "p2" type="button" class="btn btn-success" ng-click = "p11()">11</button>
+    </p>
+    <p>Carton: <input type = "number" ng-model = "carton.value"></p>
+	
+    <p>SF: <span>{{carton.toPiece()}}</span></p>
+</div>
+
+
+<!-- <div ng-app = "">
+    <p>Enter your Name: <input type = "text" ng-model = "name"></p>
+    <p>Hello <span ng-bind = "name"></span>!</p>
+</div> -->
+
+<script src = "js/angular.min.js"></script>
+<!--<script src = "angular.min.js"></script>-->
+
+<script src = "js/app.js"></script>
+<!--<script>
+</script>-->
+
+
+
+
+</body>
+</html>
